@@ -660,11 +660,11 @@ const createDna = (_layers) => {
 };
 
 const writeMetaData = (_data) => {
-  fs.writeFileSync(`${buildDir}/json/_metadata.json`, _data);
+  fs.writeFileSync(`${buildDir}/json/_metadata`, _data);
 };
 
 const writeDnaLog = (_data) => {
-  fs.writeFileSync(`${buildDir}/_dna.json`, _data);
+  fs.writeFileSync(`${buildDir}/_dna`, _data);
 };
 
 const saveMetaDataSingleFile = (_editionCount) => {
@@ -675,7 +675,7 @@ const saveMetaDataSingleFile = (_editionCount) => {
       )
     : null;
   fs.writeFileSync(
-    `${buildDir}/json/${_editionCount}.json`,
+    `${buildDir}/json/${_editionCount}`,
     JSON.stringify(metadata, null, 2)
   );
 };

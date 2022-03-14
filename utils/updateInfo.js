@@ -80,13 +80,13 @@ program
       }
 
       fs.writeFileSync(
-        `${basePath}/build/json/${item.edition}.json`,
+        `${basePath}/build/json/${item.edition}`,
         JSON.stringify(item, null, 2)
       );
     });
 
     fs.writeFileSync(
-      `${basePath}/build/json/_metadata.json`,
+      `${basePath}/build/json/_metadata`,
       JSON.stringify(data, null, 2)
     );
     console.log(`\nUpdated baseUri for images to ===> ${baseUri}\n`);

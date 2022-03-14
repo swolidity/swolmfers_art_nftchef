@@ -37,6 +37,7 @@ const background = {
 const layerConfigurations = [
   {
     growEditionSizeTo: 2500,
+    namePrefix: "swol mfers",
     layersOrder: [
       { name: "Background" },
       { name: "Type" },
@@ -60,6 +61,7 @@ const layerConfigurations = [
   },
   {
     growEditionSizeTo: 5000,
+    namePrefix: "swol mfers",
     layersOrder: [
       { name: "Background" },
       { name: "Type" },
@@ -82,7 +84,8 @@ const layerConfigurations = [
     ],
   },
   {
-    growEditionSizeTo: 6968,
+    growEditionSizeTo: 6969,
+    namePrefix: "swol mfers",
     layersOrder: [
       { name: "Background" },
       { name: "Type" },

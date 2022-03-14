@@ -18,7 +18,7 @@ const keccak256 = require("keccak256");
 
 const builtImageDir = `${basePath}/build/images`;
 const builtJsonDir = `${basePath}/build/json`;
-const metadataFilePath = `${basePath}/build/json/_metadata.json`;
+const metadataFilePath = `${basePath}/build/json/_metadata`;
 
 const getIndividualJsonFiles = (sourcePath) => {
   return fs
@@ -99,7 +99,7 @@ const replace = (image, randomID, sourcePath, options) => {
       : null;
 
     const globalMetadata = JSON.parse(
-      fs.readFileSync(path.join(builtJsonDir, "_metadata.json"))
+      fs.readFileSync(path.join(builtJsonDir, "_metadata"))
     );
 
     // update the object in the globalFile,
@@ -125,10 +125,7 @@ const replace = (image, randomID, sourcePath, options) => {
     updatedGlobalMetadata[updateIndex] = JSON.parse(updatedMetadata);
     // everything looks good to write files.
     // overwrite the build json file
-    fs.writeFileSync(
-      path.join(builtJsonDir, `${randomID}.json`),
-      updatedMetadata
-    );
+    fs.writeFileSync(path.join(builtJsonDir, `${randomID}`), updatedMetadata);
     // overwrite the build image file
     fs.writeFileSync(
       path.join(builtImageDir, `${randomID}.${imageExtension}`),
@@ -137,7 +134,7 @@ const replace = (image, randomID, sourcePath, options) => {
 
     // overwrite the build image file
     fs.writeFileSync(
-      path.join(builtJsonDir, "_metadata.json"),
+      path.join(builtJsonDir, "_metadata"),
       JSON.stringify(updatedGlobalMetadata, null, 2)
     );
   } catch (error) {
