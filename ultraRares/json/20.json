@@ -1,0 +1,44 @@
+{
+    "name": "## swol mfer ",
+    "image": "ipfs://NewUriToReplace/##.png",
+    "edition": "##",
+    "attributes": [
+        {
+          "trait_type": "Background",
+          "value": "Mark_Bell_Moon"
+        },
+        {
+          "trait_type": "Type",
+          "value": "Gold_Swol"
+        },
+        {
+          "trait_type": "Ear",
+          "value": "Diamond_Earring"
+        },
+        {
+            "trait_type": "Headphones",
+            "value": "AirPods"
+        },
+        {
+          "trait_type": "Mouth",
+          "value": "Big_Smirk"
+        },
+        {
+          "trait_type": "Eyes",
+          "value": "Laser_Eyes"
+        },
+        {
+            "trait_type": "Paump_Cover",
+            "value": "White_Paump_Cover"
+        },
+        {
+            "trait_type": "Sweat",
+            "value": "Sweat_Bead"
+        },
+        {
+            "trait_type": "Drink",
+            "value": "Gatorade_Bottle"
+        }
+      ],
+      "compiler": "HashLips Art Engine - NFTChef fork"
+}

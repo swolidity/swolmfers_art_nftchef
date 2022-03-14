@@ -12,8 +12,7 @@ const layersDir = path.join(basePath, "/layers");
  * General Generator Options
  ***********************/
 
-const description =
-  "This is the description of your NFT project, remember to replace this";
+const description = "get swol mfer";
 const baseUri = "ipfs://NewUriToReplace";
 
 const outputJPEG = false; // if false, the generator outputs png's
@@ -25,8 +24,8 @@ const outputJPEG = false; // if false, the generator outputs png's
 const startIndex = 0;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 600,
+  height: 600,
   smoothing: true, // set to false when up-scaling pixel art.
 };
 
@@ -37,41 +36,78 @@ const background = {
 
 const layerConfigurations = [
   {
-    growEditionSizeTo: 10,
-    namePrefix: "Series 2", // Use to add a name to Metadata `name:`
+    growEditionSizeTo: 2500,
     layersOrder: [
       { name: "Background" },
-      {
-        name: "Back Accessory",
-        // options: {
-        //   bypassDNA: true,
-        // },
-      },
-      { name: "Head" },
-      { name: "Clothes" },
-      { name: "Eyes" },
+      { name: "Type" },
+      { name: "Veins" },
+      { name: "P.E.D-Lyte" },
+      { name: "Ear" },
+      { name: "Brains" },
+      { name: "Mouth" },
+      { name: "Smoke" },
+      { name: "Brows" },
+      { name: "Beard" },
       { name: "Hair" },
-      { name: "Head Accessory" },
-      { name: "Shirt Accessories" },
+      { name: "Nipple" },
+      { name: "Hat" },
+      { name: "Eyes" },
+      { name: "Wraps" },
+      { name: "Slingshot" },
+      { name: "Chain" },
+      { name: "Drink" },
     ],
   },
-  // {
-  //   growEditionSizeTo: 10,
-  //   namePrefix: "Lion",
-  //   resetNameIndex: true, // this will start the Lion count at #1 instead of #6
-  //   layersOrder: [
-  //     { name: "Background" },
-  //     { name: "Hats" },
-  //     { name: "Male Hair" },
-  //   ],
-  // },
+  {
+    growEditionSizeTo: 5000,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Type" },
+      { name: "Veins" },
+      { name: "P.E.D-Lyte" },
+      { name: "Brains" },
+      { name: "Mouth" },
+      { name: "Smoke" },
+      { name: "Brows" },
+      { name: "Beard" },
+      { name: "Hair" },
+      { name: "Headphones" },
+      { name: "Nipple" },
+      { name: "Hat" },
+      { name: "Eyes" },
+      { name: "Wraps" },
+      { name: "Slingshot" },
+      { name: "Chain" },
+      { name: "Drink" },
+    ],
+  },
+  {
+    growEditionSizeTo: 6968,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Type" },
+      { name: "P.E.D-Lyte" },
+      { name: "Ear" },
+      { name: "Brains" },
+      { name: "Mouth" },
+      { name: "Smoke" },
+      { name: "Brows" },
+      { name: "Beard" },
+      { name: "Hair" },
+      { name: "Hat" },
+      { name: "Eyes" },
+      { name: "Paump Cover" },
+      { name: "Chain" },
+      { name: "Drink" },
+    ],
+  },
 ];
 
 /**
  * Set to true for when using multiple layersOrder configuration
  * and you would like to shuffle all the artwork together
  */
-const shuffleLayerConfigurations = false;
+const shuffleLayerConfigurations = true;
 
 const debugLogs = true;
 
@@ -80,7 +116,7 @@ const debugLogs = true;
  ***********************/
 
 // if you use an empty/transparent file, set the name here.
-const emptyLayerName = "NONE";
+const emptyLayerName = "None";
 
 /**
  * Incompatible items can be added to this object by a files cleanName
@@ -106,6 +142,9 @@ const incompatible = {
  */
 const forcedCombinations = {
   // floral: ["MetallicShades", "Golden Sakura"],
+  Mark_Bell_Moon: ["Alien_Swol", "Alien_Eyes"],
+  Alien_Swol: ["Alien_Eyes"],
+  Zombie_Swol: ["Red_Eyes", "Zombie_Mouth"],
 };
 
 /**
@@ -113,10 +152,7 @@ const forcedCombinations = {
  * multiple items should have the same value, specify
  * clean-filename: trait-value override pairs. Wrap filenames with spaces in quotes.
  */
-const traitValueOverrides = {
-  Helmet: "Space Helmet",
-  "gold chain": "GOLDEN NECKLACE",
-};
+const traitValueOverrides = {};
 
 const extraMetadata = {};
 
@@ -167,7 +203,7 @@ const preview = {
 };
 
 const preview_gif = {
-  numberOfImages: 5,
+  numberOfImages: 10,
   order: "ASC", // ASC, DESC, MIXED
   repeat: 0,
   quality: 100,

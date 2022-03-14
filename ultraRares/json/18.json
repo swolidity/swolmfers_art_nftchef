@@ -1,0 +1,11 @@
+{
+    "name": "## swol mfer ",
+    "image": "ipfs://NewUriToReplace/##.png",
+    "edition": "##",
+    "attributes": [
+        {
+            "trait_type": "1/1",
+            "value": "Swoltoshi"
+          }
+    ]
+}
