@@ -24,7 +24,7 @@ const program = new Command();
 const chalk = require("chalk");
 
 // read json data
-let rawdata = fs.readFileSync(`${basePath}/build/json/_metadata.json`);
+let rawdata = fs.readFileSync(`${basePath}/build/json/_metadata`);
 let data = JSON.parse(rawdata);
 
 program

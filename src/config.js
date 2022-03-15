@@ -13,7 +13,7 @@ const layersDir = path.join(basePath, "/layers");
  ***********************/
 
 const description = "get swol mfer";
-const baseUri = "ipfs://NewUriToReplace";
+const baseUri = "ipfs://QmSNKd53rpao1PpncaBXLsFFMSgka8E5DXo7qS9xfZxLxi";
 
 const outputJPEG = false; // if false, the generator outputs png's
 
